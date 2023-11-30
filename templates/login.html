@@ -1,0 +1,51 @@
+{% include 'public_header.html'%}
+<div height="100px"></div>
+<section class="page-section" id="contact">
+    <div class="container">
+        <!-- Contact Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" style="line-height: 6.5rem;">Login</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Contact Section Form-->
+        <div class="row justify-content-center">
+            <center>
+            <div class="col-md-12">
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form method="post">
+                   
+								<table class="table" style="width: 500px;color: rgb(12, 11, 11)">
+									<tr>
+										<th>USERNAME</th>
+										<td style="color: white"><input type="text" name="uname" class="form-control"></td>
+									</tr>
+									<tr>
+										<th>PASSWORD</th>
+										<td><input type="password" name="password" class="form-control"></td>
+									</tr>
+									<tr>
+										<td colspan="2" align="center"><input type="submit" name="submit" value="login" class="btn btn-primary"></td>
+									</tr>
+									<tr>
+										<td colspan="2" align="center"><a href="public_chanagepassword" class="btn btn-warning">
+										Forgot Password</a></td>
+									</tr>
+								</table>
+                    
+                </form>
+            </center>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include 'footer.html'%}
