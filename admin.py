@@ -52,3 +52,12 @@ def manage_courses():
 
     return render_template('manage_courses.html',data=data)
 
+
+@admin.route('/jstest')
+def jstest():
+    return render_template('jstest.html')
+
+@admin.route('/jquery')
+def jquery():
+    return render_template('jquery.html')
+

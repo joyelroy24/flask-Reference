@@ -1,0 +1,79 @@
+{% include 'adminheader.html' %}
+
+<script>
+    function oppo(){
+        var d=new Date()
+        var num1=document.getElementById('num').value
+        var num2=document.getElementById('num2').value
+        
+        if(document.getElementById('operation').value=='sum'){
+            document.getElementById('output').value=parseInt(num1)+parseInt(num2)
+        }
+        
+        document.getElementById("time").innerHTML = "Year "+d.getUTCFullYear()
+
+
+        // javascript for loops
+        a=[2,3,4]
+        a.forEach(element => {    
+        console.log(element)
+         });
+
+         a.forEach(arraytest)
+
+         
+        for (var i in a){
+            console.log(i+" hahah")
+        }
+    }
+    function arraytest(value,index,array){
+        console.log(value+" "+index)
+    }
+
+   
+</script>
+<center>  
+     
+    <h1 style="margin-top: 4em;">JavaScript Testing</h1>
+    <h3 id="time"></h3> 
+
+
+    
+    <form>
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label" >Number 1</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="num" name="num">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Number 2</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="num2" name="num2">
+          </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Operation</label>
+        
+            <div class="col-sm-10">
+                <select class="form-select"  id="operation" name="operation" onchange="oppo()">
+                <option selected>Choose...</option>
+                <option value="sum">Sum</option>
+                <option value="sub">Subtract</option>
+                
+                </select>           
+            </div>
+
+        </div>
+        <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label" >OutPut</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="output" name="output">
+            </div>
+          </div>
+       
+      </form>
+
+    </center>
+
+{% include 'footer.html' %}
